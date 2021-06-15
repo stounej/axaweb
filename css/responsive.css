@@ -1,0 +1,495 @@
+.navbar-header {
+    position: relative;
+
+}
+
+#mobile-nav-open-btn {
+    font-size: 30px;
+    color: #000091;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    display: none;
+
+}
+
+#mobile-nav {
+    width: 100%;
+    height: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    overflow-y: hidden;
+}
+
+#mobile-nav-close-btn {
+    font-family: Oswald;
+    font-size: 70px;
+    color: #000091;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    -webkit-transition: .3s;
+    transition: .3s;
+
+}
+
+#mobile-nav-content {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%;
+}
+
+#mobile-nav ul li {
+    margin-bottom: 20px;
+}
+
+#mobile-nav a {
+    font-family: Merriweather;
+    font-size: 18px;
+    color: #000091;
+    text-transform: uppercase;
+    display: inline;
+    -webkit-transition: .3s;
+    transition: .3s;
+
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+    color: #ff0008;
+    background: none;
+}
+
+.white-nav-top #mobile-nav ul.nav > li.active > a {
+    color: #ff0008;
+    font-weight: 500;
+}
+
+/* Large Devices */
+
+@media(min-width: 1200px) and (max-width:1299px) {
+    .site-nav-wrapper {
+        padding: 0 20px;
+    }
+}
+
+/* Medium Device */
+
+@media(min-width:992px) and (max-width:1199px) {
+
+    .site-nav-wrapper {
+        padding: 0;
+    }
+    .about-item {
+        position: relative;
+        right: 10px;
+        width: 318px;
+
+    }
+    .about-item p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+    #services-tabs .tab-bg {
+        padding: 1px 15px;
+        min-height: 359px;
+
+    }
+    .service-tab p {
+        line-height: 20px;
+        min-height: 30px;
+    }
+
+
+}
+
+/* Small Device */
+
+@media(min-width:768px) and (max-width:991px) {
+    .site-nav-wrapper {
+        padding: 0;
+    }
+    #home-heading h1 {
+        font-size: 41px;
+    }
+    #home-text p {
+        font-size: 13px;
+    }
+    .btn-general {
+        padding: 8px 35px 8px 35px;
+        font-size: 10px;
+    }
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+    .about-item {
+        width: auto;
+        height: auto;
+    }
+    .skill h6 {
+        font-size: 10px;
+    }
+    #tech-statement h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    #services-01 p {
+        font-size: 12px;
+    }
+    .service {
+        margin: 04px 0;
+    }
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a {
+        font-family: Merriweather;
+        font-size: 14.5px;
+        color: #000091;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    .r-tabs-state-active a {
+        color: #ff0008;
+        font-weight: 800;
+        border-bottom: 3px solid #ff0008;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    }
+    .service-tab p {
+        line-height: 19px;
+        min-height: 10px;
+    }
+    #services-tabs .tab-bg {
+        padding: 1px 15px;
+        min-height: 359px;
+    }
+    .service-tab h2 {
+        font-size: 28px;
+        margin: 10px;
+    }
+    .service-tab h3 {
+        font-size: 20px;
+        margin: 10px;
+    }
+    .stats-item p {
+        line-height: 18px;
+    }
+    .service-tab .btn-yellow {
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: #ff0008;
+    }
+    .claim p {
+        padding: 2px;
+        font-size: 14.2px;
+    }
+    .claim .btn-yellow {
+        font-size: 14px;
+    }
+    ul.office-details li i {
+        width: 25px;
+    }
+    ul.office-details li {
+        margin-right: 15px;
+    }
+}
+
+/* Extra Small Device */
+
+@media(max-width:767px) {
+    #mobile-nav-open-btn {
+            display: block;
+        }
+        .navbar {
+            padding: 20px 0;
+        }
+        .site-nav-wwrapper,
+        white-nav-top {
+            padding: 0;
+        }
+    #home-heading h1 {
+        font-size: 22px;
+    }
+    #home-text p {
+        font-size: 15px;
+        line-height: 18px;
+        margin: 8px 2px 30px 2px;
+    }
+    .btn-general {
+        padding: 8px 25px 6px 25px;
+        font-size: 10px;
+    }
+
+    .content-box-lg {
+        padding: 90px 0;
+    }
+    .vertical-heading {
+        text-align: center;
+    }
+    .vertical-heading h5 {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        display: block;
+        position: static;
+        margin-bottom: 15px;
+    }
+    .vertical-heading h2 {
+        font-size: 29px;
+        line-height: normal;
+        margin: 0;
+    }
+    .about-left {
+        margin-bottom: 50px;
+    }
+
+    #about-right {
+        text-align: center;
+    }
+    .content-box-md {
+        padding: 40px 0;
+    }
+    .about-item {
+        padding: 35px 0;
+        margin: auto;
+        width: 85%;
+        margin-bottom: 20px;
+        height: 450px;
+    }
+    .about-item h3 {
+        font-size: 22px;
+    }
+    #team-left .vertical-heading {
+        min-height: 120px;
+    }
+    .skill h4 {
+        font-size: 14px;
+        line-height: 35px;
+    }
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .horizontal-heading {
+        margin-bottom: 25px;
+    }
+    .horizontal-heading h2 {
+        font-size: 32px;
+    }
+    #services-01 img {
+        margin: 35px 0;
+        width: 700px;
+        margin: auto
+    }
+    .service,
+    .service .icon {
+        text-align: center;
+    }
+
+    .service h4 {
+        font-size: 17px;
+    }
+
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a {
+        font-family: Merriweather;
+        font-size: 14.5px;
+        color: #000091;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    .r-tabs-state-active a {
+        color: #ff0008;
+        font-weight: 800;
+        border-bottom: 3px solid #ff0008;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    }
+    .service-tab .btn-yellow {
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: #ff0008;
+        font-size: 11px;
+    }
+    #services-tabs .tab-bg {
+        text-align: center;
+        padding: 10px 10px;
+        min-height: 250px;
+    }
+    #services-tabs h2 {
+        font-size: 29px;
+    }
+    #services-tabs h3 {
+        font-size: 16px;
+    }
+    #services-tabs p {
+        font-size: 13px;
+    }
+    #reviews {
+        padding-top: 15px;
+
+    }
+    #reviews-slider {
+        top: 0;
+    }
+
+    #reviews .vertical-heading {
+        padding: 0;
+    }
+    .review h3 {
+        font-size: 22px;
+    }
+    .review .stars {
+        font-size: 19px;
+    }
+    .author img {
+        width: 80px !important;
+    }
+    .review {
+        margin: 0;
+    }
+
+    .claim p {
+        font-size: 13px;
+    }
+    .stats-item {
+        margin-bottom: 20px;
+        padding: 25px 5px;
+    }
+
+    .stats-item i {
+        font-size: 30px;
+    }
+    .stats-item h3 {
+        font-size: 24px;
+    }
+    .contact-left {
+        text-align: center;
+    }
+    .office {
+        margin-bottom: 40px;
+    }
+
+    ul.office-details li {
+        display: block;
+        margin-top: 25px;
+    }
+    ul.office-details li i {
+        width: auto;
+        display: block;
+        margin-bottom: 3px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    #home-heading h1 {
+        font-size: 17px;
+    }
+    #home-text p {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 8px 10px 25px 10px;
+    }
+    .vertical-heading h2 {
+        font-size: 22px;
+    }
+    .about-item {
+        padding: 35px 0;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 430px;
+    }
+    #services-tabs h2 {
+        font-size: 24px;
+        margin: 5px;
+    }
+    #services-tabs h3 {
+        font-size: 13px;
+        margin: 11px;
+    }
+    #services-tabs p {
+        font-size: 11px;
+        line-height: 14px;
+    }
+    #services-tabs img {
+        margin: auto;
+        height: 270px;
+    }
+    #services-tabs .tab-bg {
+        padding: 1px 15px;
+        min-height: 0px;
+
+    }
+    #reviews h3 {
+        font-size: 20px;
+        line-height: 18px;
+    }
+    #reviews .stars {
+        font-size: 12px;
+    }
+    .claim p {
+        font-size: 10.5px;
+    }
+    .claim {
+        width: 120px;
+        padding: 10px 0 0 0;
+        position: relative;
+        right: 8px;
+    }}
+
+    @media(max-width:320px) {
+        #reviews h3 {
+            font-size: 18px;
+            line-height: 16px;
+        }
+        #reviews p {
+            font-size: 10.8px;
+        }
+        #reviews .stars {
+            font-size: 10px;
+        }
+        .claim p {
+            font-size: 9px;
+            line-height: 15px;
+        }
+        .claim {
+            width: 80px;
+            padding: 0 0 0 0;
+            position: relative;
+            right: 15px;
+        }
+        .claim .btn-yellow {
+            font-size: 8.5px;
+            padding: 5px;
+            text-align: center;
+        }
+    }
